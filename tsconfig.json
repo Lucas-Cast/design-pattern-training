@@ -4,11 +4,11 @@
     
     // File Layout
     // "rootDir": "./src",
-    // "outDir": "./dist",
+    "outDir": "./dist",
     
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "esnext",
+    "module": "commonjs",
     "target": "esnext",
     "moduleResolution": "node",
     // For nodejs:

@@ -5,7 +5,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "run:crypto-alert": "tsx src/crypto-alert/index.ts",
-    "run:resume-builder": "tsx src/resume-builder/index.ts"
+    "run:resume-builder": "tsx src/resume-builder/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "run:file-uploader:json": "node dist/file-uploader/index.js --input src/file-uploader/files/products.json",
+    "run:file-uploader:csv": "node dist/file-uploader/index.js --input src/file-uploader/files/products.csv",
+    "run:file-uploader:xml": "node dist/file-uploader/index.js --input src/file-uploader/files/products.xml"
   },
   "keywords": [],
   "author": "",

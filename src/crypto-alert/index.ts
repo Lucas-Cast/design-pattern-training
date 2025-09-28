@@ -1,6 +1,6 @@
 import "dotenv/config"
 import { getCoinPrice } from "./configs/api-config"
-import { askAlertConfig, closeReadline, quitQuestion } from "./questions"
+import { askAlertConfig, closeReadline, quitQuestion } from "../questions"
 import { Context, ThresholdStrategy, VariationStrategy } from "./context"
 
 let previousPrice: undefined | number = undefined

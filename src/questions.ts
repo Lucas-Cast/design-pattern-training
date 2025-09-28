@@ -1,6 +1,9 @@
 import * as readline from "readline"
-import { alertConfig } from "./configs/alert-config"
-import { AlertConfigKeyType, AlertConfigType } from "./configs/types"
+import { alertConfig } from "./crypto-alert/configs/alert-config"
+import {
+  AlertConfigKeyType,
+  AlertConfigType,
+} from "./crypto-alert/configs/types"
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -35,4 +38,26 @@ export const askAlertConfig = async () => {
 
 export const closeReadline = () => {
   rl.close()
+}
+
+export const askForResumeInput = async (
+  resumeSection: string
+): Promise<string> => {
+  return (await ask(`Enter your ${resumeSection}: `)) as string
+}
+
+export const askForMultipleResumeInputs = async (
+  resumeSection: string
+): Promise<string[]> => {
+  const inputs: string[] = []
+  let moreInput = true
+
+  while (moreInput) {
+    const input = await askForResumeInput(resumeSection)
+    inputs.push(input)
+
+    moreInput = (await ask("Do you want to add another? (y/n): ")) === "y"
+  }
+
+  return inputs
 }

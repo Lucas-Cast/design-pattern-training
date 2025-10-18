@@ -7,6 +7,7 @@
     "run:crypto-alert": "tsx src/crypto-alert/index.ts",
     "run:resume-builder": "tsx src/resume-builder/index.ts",
     "run:memento-text-editor": "tsx src/memento-text-editor/index.ts",
+    "run:state-packages": "tsx src/state-packages/index.ts",
     "build": "tsc -p tsconfig.json",
     "run:file-uploader:json": "node dist/file-uploader/index.js --input src/file-uploader/files/products.json",
     "run:file-uploader:csv": "node dist/file-uploader/index.js --input src/file-uploader/files/products.csv",

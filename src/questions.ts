@@ -1,9 +1,9 @@
 import * as readline from "readline"
-import { alertConfig } from "./crypto-alert/configs/alert-config"
+import { alertConfig } from "./crypto-alert-strategy/configs/alert-config"
 import {
   AlertConfigKeyType,
   AlertConfigType,
-} from "./crypto-alert/configs/types"
+} from "./crypto-alert-strategy/configs/types"
 
 const rl = readline.createInterface({
   input: process.stdin,

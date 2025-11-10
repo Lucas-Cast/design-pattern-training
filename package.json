@@ -12,7 +12,8 @@
     "build": "tsc -p tsconfig.json",
     "run:file-uploader:json": "node dist/file-uploader/index.js --input src/file-uploader/files/products.json",
     "run:file-uploader:csv": "node dist/file-uploader/index.js --input src/file-uploader/files/products.csv",
-    "run:file-uploader:xml": "node dist/file-uploader/index.js --input src/file-uploader/files/products.xml"
+    "run:file-uploader:xml": "node dist/file-uploader/index.js --input src/file-uploader/files/products.xml",
+    "run:video-proxy": "tsx src/video-proxy/index.ts"
   },
   "keywords": [],
   "author": "",

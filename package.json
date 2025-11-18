@@ -14,7 +14,8 @@
     "run:file-uploader:csv": "node dist/file-uploader/index.js --input src/file-uploader/files/products.csv",
     "run:file-uploader:xml": "node dist/file-uploader/index.js --input src/file-uploader/files/products.xml",
     "run:video-proxy": "tsx src/video-proxy/index.ts",
-    "run:message-decorator": "tsx src/message-decorator/index.ts"
+    "run:message-decorator": "tsx src/message-decorator/index.ts",
+    "run:file-system-composite": "tsx src/file-system-composite/index.ts"
   },
   "keywords": [],
   "author": "",
